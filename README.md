@@ -8,7 +8,7 @@ Memo for the DNF software package manager(Fedora Linux, "Dandified Yum").
 | :------------------ | :------------ | :---------- |
 | dnf install | apt install | Install packages
 | dnf remove | apt remove | Remove packages
-| dnf search | apt search | Search&nbsp;for&nbsp;packages&nbsp;by&nbsp;a&nbsp;word&nbsp;in&nbsp;name,&nbsp;description,&nbsp;etc
+| dnf search | apt search | Search for packages by a word in name, description, etc
 | dnf upgrade | apt&nbsp;update;&nbsp;apt&nbsp;upgrade | Upgrade installed packages to newer versions
 | dnf distro-sync | apt full-upgrade | Upgrade packages with distro version upgrade
 | dnf&nbsp;clean&nbsp;all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>{*metadata,packages,dbcache,<br>expire-cache,all*} | apt-get&nbsp;clean /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>apt-get&nbsp;autoclean&nbsp;/<br>aptitude clean | Clean up all local caches. Autoclean deletes only obsolete info
