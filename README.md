@@ -1,5 +1,8 @@
-
 Memo for the DNF software package manager(Fedora Linux, "Dandified Yum").  
+
+<style>
+	td { font-size: 14px; }
+</style>
 
 + `dnf` allows only `*`, `?`, `[]` globbing in query strings(exps).
 + `apt-get` may use POSIX regular exps.
@@ -30,5 +33,11 @@ Memo for the DNF software package manager(Fedora Linux, "Dandified Yum").
 |  | apt-get changelog | Show the changelog of a package
 | dnf check-update | apt-get upgrade -> n | Lists packages which have an update available
 | dnf list available | apt-cache dumpavail<br>apt-cache&nbsp;dump&nbsp;(Cache&nbsp;only)<br>apt-cache pkgnames | Display a list of all packages in all installation sources
-| dnf list installed | dpkg --list \| grep ^i | List of installed packages
+| dnf&nbsp;list&nbsp;installed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | dpkg --list \| grep ^i | List of installed packages
+| dnf config-manager --add-repo | add-apt-repository | Add repository *URL*
+| dnf config-manager --set-disabled /<br>rm /etc/yum.repos.d/*URL*.repo | add-apt-repository -r | Remove repository *URL*
+|  | dpkg-reconfigure | Reconfigure installed package
+|  |  |
+|  |  |
+|  |  |
 | ... | ... | ...
