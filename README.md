@@ -1,9 +1,5 @@
 Memo for the DNF software package manager(Fedora Linux, "Dandified Yum").  
 
-<style>
-	td { font-size: 14px; }
-</style>
-
 + `dnf` allows only `*`, `?`, `[]` globbing in query strings(exps).
 + `apt-get` may use POSIX regular exps.
 
